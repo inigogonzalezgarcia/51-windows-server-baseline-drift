@@ -1,0 +1,57 @@
+Server,Role,Tier,OS,Build,OU,Site,Owner,Environment,LastPatch,LastReboot,Maintenance
+FAB-GET-DC01,Domain controller,Tier 0,Windows Server 2022,10.0.20348,"OU=Domain Controllers,DC=fabrikam,DC=local",Getafe,Identity team,prod,2026-10-14,2026-10-14,No
+FAB-GET-DC02,Domain controller,Tier 0,Windows Server 2022,10.0.20348,"OU=Domain Controllers,DC=fabrikam,DC=local",Getafe,Identity team,prod,2026-10-14,2026-10-14,No
+FAB-SVQ-DC01,Domain controller,Tier 0,Windows Server 2022,10.0.20348,"OU=Domain Controllers,DC=fabrikam,DC=local",Sevilla,Identity team,prod,2026-10-12,2026-10-12,No
+FAB-SVQ-DC02,Domain controller,Tier 0,Windows Server 2022,10.0.20348,"OU=Domain Controllers,DC=fabrikam,DC=local",Sevilla,Identity team,prod,2026-10-13,2026-10-13,No
+FAB-GET-FS01,File server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Windows server team,prod,2026-10-13,2026-10-13,No
+FAB-GET-FS02,File server,Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Windows server team,prod,2026-10-15,2026-10-15,No
+FAB-SVQ-FS01,File server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Windows server team,prod,2026-10-12,2026-10-12,No
+FAB-GET-APP01,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,MES team,prod,2026-10-13,2026-10-13,No
+FAB-GET-APP02,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,PLM team,prod,2026-10-14,2026-10-14,No
+FAB-GET-APP03,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Quality apps team,prod,2026-10-12,2026-10-12,No
+FAB-GET-APP04,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,ERP team,prod,2026-10-15,2026-10-15,No
+FAB-GET-APP05,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,MES team,prod,2026-10-15,2026-10-15,No
+FAB-GET-APP06,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,PLM team,prod,2026-10-13,2026-10-13,No
+FAB-GET-APP07,Application server,Tier 1,Windows Server 2016,10.0.14393,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Quality apps team,prod,2026-07-15,2026-06-24,No
+FAB-GET-APP08,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,ERP team,prod,2026-10-12,2026-10-12,No
+FAB-GET-APP09,Application server,Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,MES team,prod,2026-10-15,2026-10-15,No
+FAB-GET-APP10,Application server,Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,PLM team,prod,2026-10-12,2026-10-12,No
+FAB-SVQ-APP01,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,MES team,prod,2026-10-13,2026-10-13,No
+FAB-SVQ-APP02,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Quality apps team,prod,2026-10-15,2026-10-15,No
+FAB-SVQ-APP03,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,ERP team,prod,2026-10-15,2026-10-15,No
+FAB-SVQ-APP04,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,MES team,prod,2026-10-13,2026-10-13,No
+FAB-SVQ-APP05,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Quality apps team,prod,2026-10-12,2026-10-12,No
+FAB-SVQ-APP06,Application server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,ERP team,prod,2026-10-15,2026-10-15,No
+FAB-SVQ-APP07,Application server,Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,MES team,prod,2026-10-12,2026-10-12,No
+FAB-SVQ-APP08,Application server,Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Quality apps team,prod,2026-10-13,2026-10-13,No
+FAB-GET-SQL01,SQL Server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Database team,prod,2026-10-12,2026-10-12,No
+FAB-GET-SQL02,SQL Server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Database team,prod,2026-10-12,2026-08-29,No
+FAB-GET-SQL03,SQL Server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Database team,prod,2026-10-12,2026-10-12,No
+FAB-GET-SQL04,SQL Server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Database team,prod,2026-10-13,2026-10-13,No
+FAB-SVQ-SQL01,SQL Server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Database team,prod,2026-10-12,2026-10-12,No
+FAB-SVQ-SQL02,SQL Server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Database team,prod,2026-10-13,2026-10-13,No
+FAB-SVQ-SQL03,SQL Server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Database team,prod,2026-09-03,2026-08-16,No
+FAB-GET-WEB01,Web server (IIS),Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Web team,prod,2026-10-12,2026-10-12,No
+FAB-GET-WEB02,Web server (IIS),Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Web team,prod,2026-10-13,2026-10-13,No
+FAB-GET-WEB03,Web server (IIS),Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Web team,prod,2026-10-13,2026-10-13,No
+FAB-SVQ-WEB01,Web server (IIS),Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Web team,prod,2026-10-15,2026-10-15,No
+FAB-SVQ-WEB02,Web server (IIS),Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Web team,prod,2026-10-14,2026-10-14,No
+FAB-GET-JMP01,Jump server,Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Windows server team,prod,2026-10-12,2026-10-12,No
+FAB-GET-PRN01,Print server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Windows server team,prod,2026-10-13,2026-10-13,No
+FAB-SVQ-PRN01,Print server,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Windows server team,prod,2026-10-13,2026-10-13,No
+FAB-GET-WSUS01,WSUS,Tier 1,Windows Server 2019,10.0.17763,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Windows server team,prod,2026-10-12,2026-10-12,No
+FAB-GET-BKP01,Backup server,Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Backup team,prod,2026-10-13,2026-10-13,No
+FAB-SVQ-BKP01,Backup server,Tier 1,Windows Server 2022,10.0.20348,"OU=Servers,OU=Tier 1,OU=Sevilla,DC=fabrikam,DC=local",Sevilla,Backup team,prod,2026-10-12,2026-10-12,No
+FAB-GET-ENG01,Engineering application,Tier 1,Windows Server 2022,10.0.20348,"OU=Engineering,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Engineering IT,prod,2026-10-15,2026-10-15,No
+FAB-GET-ENG02,Engineering application,Tier 1,Windows Server 2022,10.0.20348,"OU=Engineering,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Engineering IT,prod,2026-10-15,2026-10-15,No
+FAB-GET-ENG03,Engineering application,Tier 1,Windows Server 2022,10.0.20348,"OU=Engineering,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Engineering IT,prod,2026-10-14,2026-10-14,No
+FAB-GET-ENG04,Engineering application,Tier 1,Windows Server 2022,10.0.20348,"OU=Engineering,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Engineering IT,prod,2026-10-14,2026-10-14,No
+FAB-GET-ENG05,Engineering application,Tier 1,Windows Server 2022,10.0.20348,"OU=Engineering,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Engineering IT,prod,2026-10-12,2026-10-12,No
+FAB-GET-ENG06,Engineering application,Tier 1,Windows Server 2022,10.0.20348,"OU=Engineering,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Engineering IT,prod,2026-10-15,2026-10-15,No
+FAB-GET-ENG07,Engineering application,Tier 1,Windows Server 2022,10.0.20348,"OU=Engineering,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Engineering IT,prod,2026-10-15,2026-10-15,No
+FAB-TST-APP01,Test server,Tier 1,Windows Server 2022,10.0.20348,"OU=Test,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Application test team,test,2026-10-13,2026-10-13,No
+FAB-TST-APP02,Test server,Tier 1,Windows Server 2022,10.0.20348,"OU=Test,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Application test team,test,2026-10-14,2026-10-14,No
+FAB-TST-APP03,Test server,Tier 1,Windows Server 2022,10.0.20348,"OU=Test,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Application test team,test,2026-10-14,2026-10-14,No
+FAB-TST-APP04,Test server,Tier 1,Windows Server 2022,10.0.20348,"OU=Test,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Application test team,test,2026-10-12,2026-10-12,No
+FAB-TST-SQL01,Test server,Tier 1,Windows Server 2022,10.0.20348,"OU=Test,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Application test team,test,2026-10-15,2026-10-15,No
+FAB-TST-WEB01,Test server,Tier 1,Windows Server 2022,10.0.20348,"OU=Test,OU=Tier 1,OU=Getafe,DC=fabrikam,DC=local",Getafe,Application test team,test,2026-10-14,2026-10-14,No

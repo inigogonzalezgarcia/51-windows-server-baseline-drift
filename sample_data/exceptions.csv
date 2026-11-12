@@ -1,0 +1,6 @@
+Server,SettingId,ApprovedValue,Reason,Approver,Ticket,Expires
+FAB-GET-APP07,TLS-01,1,Legacy quality-records app (vendor client only speaks TLS 1.0); upgrade planned,Head of Information Security,RISK-0217,2026-11-05
+FAB-SVQ-APP03,SEC-02,0,Old scan-to-folder appliance does not sign SMB,,RITM0041877,2027-02-28
+FAB-GET-APP04,SMB-02,3,MES client reads an old NAS share over SMBv1; NAS replacement in project PRJ-118,Head of Information Security,RISK-0231,2027-03-31
+FAB-GET-APP08,TLS-02,1,Partner EDI gateway still on TLS 1.1; partner migrating,CISO,RISK-0240,2026-12-01
+FAB-SVQ-WEB01,RDP-03,2,Old monitoring console used RDP encryption level 2,Head of Information Security,RISK-0198,2027-01-31

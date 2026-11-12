@@ -1,0 +1,46 @@
+SettingId,Area,Name,Type,Path,ValueName,Expected,Comparison,Severity,AppliesTo,Gpo,Reference,HighRisk
+ACC-01,Accounts,Blank passwords only at the console,registry,HKLM\SYSTEM\CurrentControlSet\Control\Lsa,LimitBlankPasswordUse,1,equals,medium,All,FAB-SEC Server Baseline,A.8.5; FAB-SRV-001,
+ACC-02,Accounts,Do not store the LAN Manager hash,registry,HKLM\SYSTEM\CurrentControlSet\Control\Lsa,NoLMHash,1,equals,high,All,FAB-SEC Server Baseline,A.8.5; FAB-SRV-002,
+ACC-03,Accounts,No anonymous enumeration of SAM accounts and shares,registry,HKLM\SYSTEM\CurrentControlSet\Control\Lsa,RestrictAnonymous,1,equals,medium,All,FAB-SEC Server Baseline,A.8.3; FAB-SRV-003,
+ACC-04,Accounts,WDigest keeps no clear-text credentials,registry,HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest,UseLogonCredential,0,equals,high,All,FAB-SEC Server Baseline,A.8.5; FAB-SRV-004,
+ACC-05,Accounts,LSA protection (RunAsPPL),registry,HKLM\SYSTEM\CurrentControlSet\Control\Lsa,RunAsPPL,1|2,in,medium,All,FAB-SEC Server Baseline,A.8.5; FAB-SRV-005,
+SEC-01,Security options,"LAN Manager auth level: NTLMv2 only, refuse LM and NTLM",registry,HKLM\SYSTEM\CurrentControlSet\Control\Lsa,LmCompatibilityLevel,5,min,high,All,FAB-SEC Server Baseline,A.8.5; FAB-SRV-010,yes
+SEC-02,Security options,SMB server signing required,registry,HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters,RequireSecuritySignature,1,equals,high,All,FAB-SEC Server Baseline,A.8.20; FAB-SRV-011,
+SEC-03,Security options,SMB client signing required,registry,HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters,RequireSecuritySignature,1,equals,medium,All,FAB-SEC Server Baseline,A.8.20; FAB-SRV-012,
+SEC-04,Security options,LDAP server signing required,registry,HKLM\SYSTEM\CurrentControlSet\Services\NTDS\Parameters,LDAPServerIntegrity,2,equals,high,Tier 0,FAB-SEC Domain Controller Baseline,A.8.20; FAB-DC-001,
+SEC-05,Security options,NTLM server session security: NTLMv2 and 128-bit,registry,HKLM\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0,NTLMMinServerSec,537395200,equals,medium,All,FAB-SEC Server Baseline,A.8.5; FAB-SRV-013,
+SEC-06,Security options,UAC Admin Approval Mode on,registry,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System,EnableLUA,1,equals,medium,All,FAB-SEC Server Baseline,A.8.2; FAB-SRV-014,
+NET-01,Network,LLMNR off (turn off multicast name resolution),registry,HKLM\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient,EnableMulticast,0,equals,high,All,FAB-SEC Server Baseline,A.8.20; FAB-SRV-020,yes
+SMB-01,SMB and TLS,SMBv1 server off,smb,,EnableSMB1Protocol,False,equals,high,All,FAB-SEC Server Baseline,A.8.20; FAB-SRV-030,yes
+SMB-02,SMB and TLS,SMBv1 client driver disabled,registry,HKLM\SYSTEM\CurrentControlSet\Services\mrxsmb10,Start,4,equals,medium,All,FAB-SEC Server Baseline,A.8.20; FAB-SRV-031,
+TLS-01,SMB and TLS,TLS 1.0 server disabled,registry,HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server,Enabled,0,equals,high,All,FAB-SEC Server Baseline,A.8.24; FAB-SRV-032,yes
+TLS-02,SMB and TLS,TLS 1.1 server disabled,registry,HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server,Enabled,0,equals,high,All,FAB-SEC Server Baseline,A.8.24; FAB-SRV-033,yes
+TLS-03,SMB and TLS,SSL 3.0 server disabled,registry,HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server,Enabled,0,equals,high,All,FAB-SEC Server Baseline,A.8.24; FAB-SRV-034,yes
+AUD-01,Audit policy,Audit Logon,auditpol,Logon,,Success and Failure,equals,high,All,FAB-SEC Audit Policy,A.8.15; FAB-SRV-040,yes
+AUD-02,Audit policy,Audit Account Lockout,auditpol,Account Lockout,,Failure|Success and Failure,in,high,All,FAB-SEC Audit Policy,A.8.15; FAB-SRV-041,yes
+AUD-03,Audit policy,Audit Credential Validation,auditpol,Credential Validation,,Success and Failure,equals,medium,All,FAB-SEC Audit Policy,A.8.15; FAB-SRV-042,
+AUD-04,Audit policy,Audit Security Group Management,auditpol,Security Group Management,,Success|Success and Failure,in,medium,All,FAB-SEC Audit Policy,A.8.15; FAB-SRV-043,
+AUD-05,Audit policy,Audit User Account Management,auditpol,User Account Management,,Success and Failure,equals,medium,All,FAB-SEC Audit Policy,A.8.15; FAB-SRV-044,
+AUD-06,Audit policy,Audit Process Creation,auditpol,Process Creation,,Success|Success and Failure,in,medium,All,FAB-SEC Audit Policy,A.8.15; FAB-SRV-045,
+AUD-07,Audit policy,Audit Audit Policy Change,auditpol,Audit Policy Change,,Success|Success and Failure,in,medium,All,FAB-SEC Audit Policy,A.8.15; FAB-SRV-046,
+AUD-08,Audit policy,Audit Directory Service Changes,auditpol,Directory Service Changes,,Success|Success and Failure,in,medium,Tier 0,FAB-SEC Domain Controller Baseline,A.8.15; FAB-DC-002,
+AUD-09,Audit policy,Security log maximum size (KB),registry,HKLM\SOFTWARE\Policies\Microsoft\Windows\EventLog\Security,MaxSize,196608,min,low,All,FAB-SEC Audit Policy,A.8.15; FAB-SRV-047,
+PSH-01,PowerShell,Script block logging on,registry,HKLM\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging,EnableScriptBlockLogging,1,equals,high,All,FAB-SEC PowerShell Logging,A.8.15; FAB-SRV-050,yes
+PSH-02,PowerShell,Module logging on,registry,HKLM\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ModuleLogging,EnableModuleLogging,1,equals,medium,All,FAB-SEC PowerShell Logging,A.8.15; FAB-SRV-051,
+SVC-01,Services,Print Spooler disabled on domain controllers,service,Spooler,StartType,Disabled,equals,high,Tier 0,FAB-SEC Domain Controller Baseline,A.8.9; FAB-DC-003,yes
+SVC-02,Services,Windows Remote Management running,service,WinRM,Status,Running,equals,low,All,FAB-SEC Server Baseline,A.8.9; FAB-SRV-060,
+FW-01,Firewall,Domain profile on,firewall,Domain,Enabled,True,equals,high,All,FAB-SEC Windows Firewall,A.8.20; FAB-SRV-070,yes
+FW-02,Firewall,Private profile on,firewall,Private,Enabled,True,equals,high,All,FAB-SEC Windows Firewall,A.8.20; FAB-SRV-071,yes
+FW-03,Firewall,Public profile on,firewall,Public,Enabled,True,equals,high,All,FAB-SEC Windows Firewall,A.8.20; FAB-SRV-072,yes
+DEF-01,Defender,Real-time protection on,defender,,RealTimeProtectionEnabled,True,equals,high,All,FAB-SEC Defender,A.8.7; FAB-SRV-080,yes
+DEF-02,Defender,ASR: block credential stealing from LSASS,asr,HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules,9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2,1,equals,high,All,FAB-SEC Defender,A.8.7; FAB-SRV-081,yes
+DEF-03,Defender,ASR: block abuse of exploited vulnerable signed drivers,asr,HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules,56a863a9-875e-4185-98a7-b882c64b5ce5,1,equals,medium,All,FAB-SEC Defender,A.8.7; FAB-SRV-082,
+DEF-04,Defender,Antivirus signatures at most 3 days old,defender,,AntivirusSignatureAge,3,max,medium,All,FAB-SEC Defender,A.8.7; FAB-SRV-083,
+DEF-05,Defender,Tamper protection on,defender,,IsTamperProtected,True,equals,medium,All,FAB-SEC Defender,A.8.7; FAB-SRV-084,
+LAP-01,LAPS,LAPS manages the local administrator password,laps,,msLAPS-PasswordExpirationTime,Present,equals,high,Tier 1,FAB-SEC LAPS,A.8.2; FAB-SRV-090,yes
+RDP-01,RDP,Network Level Authentication required,registry,HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services,UserAuthentication,1,equals,high,All,FAB-SEC Server Baseline,A.8.5; FAB-SRV-100,yes
+RDP-02,RDP,RDP security layer: TLS,registry,HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services,SecurityLayer,2,equals,medium,All,FAB-SEC Server Baseline,A.8.24; FAB-SRV-101,
+RDP-03,RDP,RDP encryption level: high,registry,HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services,MinEncryptionLevel,3,min,low,All,FAB-SEC Server Baseline,A.8.24; FAB-SRV-102,
+URA-01,User rights,Debug programs: Administrators only,userright,,SeDebugPrivilege,*S-1-5-32-544,equals,medium,All,FAB-SEC Server Baseline,A.8.2; FAB-SRV-110,
+URA-02,User rights,Deny access from the network: Guests,userright,,SeDenyNetworkLogonRight,*S-1-5-32-546,contains,medium,All,FAB-SEC Server Baseline,A.8.2; FAB-SRV-111,
+URA-03,User rights,Log on through RDP (DCs): Administrators only,userright,,SeRemoteInteractiveLogonRight,*S-1-5-32-544,equals,medium,Tier 0,FAB-SEC Domain Controller Baseline,A.8.2; FAB-DC-004,

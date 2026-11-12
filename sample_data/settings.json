@@ -1,0 +1,53 @@
+{
+  "organisation": "Fabrikam Aerospace",
+  "review_date": "2026-11-12 09:00",
+  "previous_review": "2026-10-12",
+  "target_pct": 95,
+  "red_pct": 80,
+  "stale_days": 14,
+  "max_uptime_days": 60,
+  "patch_age_days": 45,
+  "exception_warning_days": 30,
+  "tiers": {
+    "Tier 0": {
+      "ous": [
+        "OU=Domain Controllers"
+      ],
+      "target_pct": 100
+    },
+    "Tier 1": {
+      "ous": [
+        "OU=Servers,OU=Tier 1",
+        "OU=Test,OU=Tier 1"
+      ],
+      "target_pct": 95
+    }
+  },
+  "severity_weights": {
+    "high": 5,
+    "medium": 3,
+    "low": 1
+  },
+  "action_days": {
+    "red": 7,
+    "amber": 30
+  },
+  "owners": {
+    "Accounts": "Windows server team",
+    "Security options": "Windows server team",
+    "Network": "Windows server team",
+    "SMB and TLS": "Windows server team",
+    "Audit policy": "Security operations",
+    "PowerShell": "Security operations",
+    "Services": "Windows server team",
+    "Firewall": "Network and firewall team",
+    "Defender": "Endpoint security",
+    "LAPS": "Identity team",
+    "RDP": "Windows server team",
+    "User rights": "Identity team",
+    "gpo": "Group Policy owner",
+    "exceptions": "Security risk manager",
+    "hygiene": "Windows server team",
+    "compliance": "Head of infrastructure"
+  }
+}
